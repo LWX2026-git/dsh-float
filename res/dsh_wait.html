@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DSH 启动中</title>
+<style>
+body {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  font-family: 'Microsoft YaHei', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.box { text-align: center; }
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #444;
+  border-top: 4px solid #4a9eff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: s 1s linear infinite;
+}
+@keyframes s { to { transform: rotate(360deg); } }
+h1 { font-size: 20px; margin: 0 0 10px; }
+p { color: #9d9d9d; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="spinner"></div>
+  <h1>DSH 正在启动…</h1>
+  <p>首次启动需要下载依赖，可能需要 1~3 分钟</p>
+</div>
+</body>
+</html>

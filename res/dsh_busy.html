@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>端口占用</title>
+<style>
+body {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  font-family: 'Microsoft YaHei', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+h1 { font-size: 22px; color: #ff8080; }
+p { color: #9d9d9d; font-size: 14px; line-height: 1.6; }
+code {
+  background: #2a2a2a;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #7fdbff;
+}
+</style>
+</head>
+<body>
+<div>
+  <h1>⚠ 端口 3080 已被占用</h1>
+  <p>但未找到 DSH 服务 token。</p>
+  <p>可能是旧的 DSH 进程残留。</p>
+  <p style="margin-top:24px">
+    请运行以下命令清理：<br>
+    <code>taskkill /F /IM node.exe</code>
+  </p>
+  <p>然后重新打开此页。</p>
+</div>
+</body>
+</html>
